@@ -19,8 +19,7 @@ Author: Lluis Nadal. August 2011.
 #include "mbed.h"
 
 
-Serial pc(USBTX, USBRX);
-InterruptIn in(PA_0);
+InterruptIn in(PA_1);
 DigitalOut s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
 BusOut setColor(PA_15, PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
@@ -34,17 +33,17 @@ int color; // Color
 void print() {  // Print to PC
     switch (color) {
         case 0:
-            pc.printf(" Red: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
+            printf(" Red: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 1:
-            pc.printf(" Blue: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
+            printf(" Blue: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 2:
-            pc.printf(" Clear: \t%.2f Hz, \t%.2f us\r\n", freq, period);
+            printf(" Clear: \t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 3:
-            pc.printf(" Green: \t%.2f Hz, \t%.2f us\r\n", freq, period);
-            pc.printf("\r\n");
+            printf(" Green: \t%.2f Hz, \t%.2f us\r\n", freq, period);
+            printf("\r\n");
             break;
     }
 }
