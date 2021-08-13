@@ -21,7 +21,7 @@ Author: Lluis Nadal. August 2011.
 
 InterruptIn in(PA_1);
 DigitalOut s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
-BusOut setColor(PA_15, PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
+BusOut setColor(PA_1, PA_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
@@ -59,7 +59,7 @@ void time() {
 
         //color++;
         //if (color > 3) color = 0;
-        color = color == 3 ? 1 : 3 ;
+        color = color == 0 ? 1 : 0 ;
         setColor = color;
         
         wait(0.5);
