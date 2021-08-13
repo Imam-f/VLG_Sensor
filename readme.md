@@ -14,7 +14,7 @@ If there is any problem, try erase *print* wrapper
 from makefile
 
 Available sensor
-- AMG              --X
+- AMG              --V
 - CMPS             --X
 - LCD              --X
 - Gripper Servo    --X

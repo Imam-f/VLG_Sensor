@@ -1,0 +1,12 @@
+mingw32-make.exe -f "c:\Users\dell\Documents\Dev\Mbed\Ping_vscode_gcc_arm_nucleo_f446re (1)\Ping\Makefile" --dry-run --always-make --keep-going --print-directory
+mingw32-make.exe: Entering directory 'c:/Users/dell/Documents/Dev/Mbed/Ping_vscode_gcc_arm_nucleo_f446re (1)/Ping'
+c:\Users\dell\Documents\Dev\Mbed\Ping_vscode_gcc_arm_nucleo_f446re (1)\Ping\Makefile:25: recipe for target 'all' failed
+mingw32-make.exe: Leaving directory 'c:/Users/dell/Documents/Dev/Mbed/Ping_vscode_gcc_arm_nucleo_f446re (1)/Ping'
+ 
+mingw32-make.exe[1]: c:/Users/dell/Documents/Dev/Mbed/Ping_vscode_gcc_arm_nucleo_f446re (1)/Ping/(1)/Ping/Makefile: No such file or directory
+mingw32-make.exe[1]: *** No rule to make target 'c:/Users/dell/Documents/Dev/Mbed/Ping_vscode_gcc_arm_nucleo_f446re (1)/Ping/(1)/Ping/Makefile'.
+mingw32-make.exe[1]: Failed to remake makefile 'c:/Users/dell/Documents/Dev/Mbed/Ping_vscode_gcc_arm_nucleo_f446re (1)/Ping/(1)/Ping/Makefile'.
+mingw32-make.exe[1]: *** No targets specified and no makefile found.  Stop.
+mingw32-make.exe: *** [all] Error 2
+mingw32-make.exe: Failed to remake makefile 'c:\Users\dell\Documents\Dev\Mbed\Ping_vscode_gcc_arm_nucleo_f446re (1)\Ping\Makefile'.
+ 

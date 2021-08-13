@@ -59,7 +59,8 @@ void time() {
 
         //color++;
         //if (color > 3) color = 0;
-        //setColor = color;
+        color = color == 3 ? 1 : 3 ;
+        setColor = color;
         
         wait(0.5);
         t.reset(); // Reset timer and wait for next interrupt
@@ -74,10 +75,10 @@ int main() {
     wait(1);
     n = 0;
     color = 0;
-    // setColor = color;
+    setColor = color;
 
     s0 = 0;
-    s1 = 1; // Frequency 2% = 12 kHz full-scale.
+    s1 = 1;         // Frequency 2% = 12 kHz full-scale.
 
     in.rise(&time);  // Set up the interrupt for rising edge
     t.start();       // Start the timer

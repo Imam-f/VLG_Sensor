@@ -1,0 +1,1 @@
+mingw32-make.exe all -f "c:\Users\dell\Documents\Dev\Mbed\test1_vscode_gcc_arm_nucleo_f446re (1)\test1\Makefile" --print-data-base --no-builtin-variables --no-builtin-rules --question
