@@ -22,7 +22,7 @@ c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Make
 mingw32-make.exe[1]: *** [TCS230.elf] Error 1
  
 
-# Make data base, printed on Fri Aug 13 14:25:09 2021
+# Make data base, printed on Fri Aug 13 17:40:05 2021
 
 # Variables
 
@@ -42,6 +42,8 @@ LD_FLAGS := -Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_f
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+PLATFORMIO_IDE = 2.3.2
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
@@ -65,8 +67,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 NVM_HOME = C:\Users\dell\AppData\Roaming\nvm
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 196)
-PREPROC = arm-none-eabi-cpp -E -P -Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_free_r -Wl,--wrap,_realloc_r -Wl,--wrap,_memalign_r -Wl,--wrap,_calloc_r -Wl,--wrap,exit -Wl,--wrap,atexit -Wl,-n -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-exceptions -ffunction-sections -fdata-sections -funsigned-char -MMD -fomit-frame-pointer -Os -g -DMBED_TRAP_ERRORS_ENABLED=1 -DMBED_MINIMAL_PRINTF -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -DMBED_ROM_START=0x8000000 -DMBED_ROM_SIZE=0x80000 -DMBED_RAM_S 
-TART=0x20000000 -DMBED_RAM_SIZE=0x20000 -DMBED_BOOT_STACK_SIZE=4096 -DXIP_ENABLE=0
+PREPROC = arm-none-eabi-cpp -E -P -Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_free_r -Wl,--wrap,_realloc_r -Wl,--wrap,_memalign_r -Wl,--wrap,_calloc_r -Wl,--wrap,exit -Wl,--wrap,atexit -Wl,-n -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-exceptions -ffunction-sections -fdata-sections -funsigned-char -MMD -fomit-frame-pointer -Os -g -DMBED_TRAP_ERRORS_ENABLED=1 -DMBED_MINIMAL_PRINTF -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -DMBED_ROM_START=0x8000000 -DMBED_ROM_SIZE=0x80000 -DMBED_RAM_START=0x20000000 -DMBED_RAM_SIZE=0x20000 -DMBED_BOOT_STACK_SIZE=4096 -DXIP_ENABLE=0
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'main.d', line 1)
@@ -88,13 +89,13 @@ NVM_SYMLINK = C:\Program Files\nodejs
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-88165dac-9625-4737-bf9c-6b373a67468e-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-74635b42-8195-46ac-a35a-55a6874420d2-sock
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 193)
 CPP = arm-none-eabi-g++
 # environment
 VSCODE_CWD = C:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230
 # environment
-PATH = D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;%QUARTUS_ROOTDIR%\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
+NO_PROXY = 127.0.0.1
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 194)
 LD = arm-none-eabi-gcc
 # environment
@@ -113,7 +114,8 @@ USERPROFILE = C:\Users\dell
 ALLUSERSPROFILE = C:\ProgramData
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 36)
 VPATH = ..
-# environment
+# 
+ environment
 VSCODE_LOG_STACK = false
 # environment
 NUMBER_OF_PROCESSORS = 8
@@ -132,7 +134,7 @@ SRCDIR = c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TC
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4676_TCEXSFQYKJSLGWRN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12392_GALMWMQFFFHTWZPC
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -162,7 +164,8 @@ COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
 LOGONSERVER = \\IMAM-EL18
 # automatic
-+F = $(notdir $+)
++F = $( 
+notdir $+)
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -171,10 +174,14 @@ USERDOMAIN = IMAM-EL18
 MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
 # environment
 MAKELEVEL := 1
+# environment
+PLATFORMIO_PATH = C:\Users\dell\.platformio\penv\Scripts;C:\Users\dell\.platformio\penv;C:\Users\dell\.platformio\python3;D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+# environment
+PATH = D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;%QUARTUS_ROOTDIR%\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
 # environment
 QT_DEVICE_PIXEL_RATIO = auto
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 191)
@@ -212,7 +219,8 @@ PROCESSOR_ARCHITEW6432 = AMD64
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 # environment
-OS = Windows_NT
+OS = Wi 
+ndows_NT
 # environment
 VSCODE_IPC_HOOK = \\.\pipe\200ef07548169b4e3559d61606c7ffb6-1.59.0-main-sock
 # environment
@@ -249,6 +257,8 @@ IDF_TOOLS_PATH = C:\Users\dell\.espressif
 VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
 # automatic
 <F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 16)
 OBJDIR := BUILD
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 282)
@@ -264,7 +274,8 @@ LINKER_SCRIPT = ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/STM32F411XE.ld
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 479)
-DEPS = $(OBJECTS:.o=.d) $(SYS_OBJECTS:.o=.d)
+DEPS = $(OBJECTS:.o=.d) $(SY 
+S_OBJECTS:.o=.d)
 # default
 SUFFIXES := 
 # environment
@@ -288,11 +299,11 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 4676
+VSCODE_PID = 12392
 # environment
 USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # variable set hash-table stats:
-# Load=132/1024=13%, Rehash=0, Collisions=37/880=4%
+# Load=136/1024=13%, Rehash=0, Collisions=44/884=5%
 
 # Pattern-specific Variable Values
 
@@ -301,8 +312,8 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # Directories
 
 # : could not be stat'd.
-# C:\Users\dell\Anaconda3 (key C:/Users/dell/Ana 
-conda3, mtime 1624243547): 85 files, no impossibilities.
+# C:\Users\dell\Anaconda3 (key C:/Users/dell/Anaconda3, mtime 1624243547): 85 files, no impossibilities.
+ 
 # C:\ProgramData\DockerDesktop\version-bin (key C:/ProgramData/DockerDesktop/version-bin, mtime 1626478245): 2 files, no impossibilities.
 # C:\mylib (key C:/mylib, mtime 1623649788): 3 files, no impossibilities.
 # d:\program files\altera\quartus\bin (key d:/program files/altera/quartus/bin, mtime 1607429924): 769 files, no impossibilities.
@@ -311,16 +322,17 @@ conda3, mtime 1624243547): 85 files, no impossibilities.
 # C:\emsdk\node\12.18.1_64bit\bin: could not be stat'd.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1570715904): 5 files, no impossibilities.
 # C:\Program Files\Intel\WiFi\bin\ (key C:/Program Files/Intel/WiFi/bin/, mtime 1562152127): 27 files, no impossibilities.
-# C:\Program Files\Common Files\Intel\WirelessCommon\ (key C:/Program Files/Common Files/Intel/WirelessCommon/, mtime 1562152115): 7 files, no impossibilities.
+# C:\Program Files\Common Files\Intel\WirelessCommon\ (key C:/Program Files/Common Files/Intel/WirelessCommon/, 
+ mtime 1562152115): 7 files, no impossibilities.
 # C:\Users\dell\AppData\Local\Microsoft\WindowsApps (key C:/Users/dell/AppData/Local/Microsoft/WindowsApps, mtime 1628686604): 24 files, no impossibilities.
 # D:\Program Files\JDK11\bin (key D:/Program Files/JDK11/bin, mtime 1624488881): 127 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1614851713): 32 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1628434097): 182 files, no impossibilities.
-# . (key c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/BUILD, mtime 1628839506): 7 files, no impossibilities.
+# . (key c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/BUILD, mtime 1628851200): 7 files, no impossibilities.
 # C:\flutter\bin (key C:/flutter/bin, mtime 1611382297): 8 files, no impossibilities.
-# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1622368225): 7 f 
-iles, no impossibilities.
-# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1615702035): 5 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1622368225): 7 files, no impossibilities.
+# C:\Program Files (x86)\Common 
+ Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1615702035): 5 files, no impossibilities.
 # C:\Program Files (x86)\HP\Common\HPDestPlgIn\ (key C:/Program Files (x86)/HP/Common/HPDestPlgIn/, mtime 1568564402): 11 files, no impossibilities.
 # C:\Program Files (x86)\Dev-Cpp\MinGW64\bin (key C:/Program Files (x86)/Dev-Cpp/MinGW64/bin, mtime 1579149505): 63 files, no impossibilities.
 # C: could not be stat'd.
@@ -328,7 +340,8 @@ iles, no impossibilities.
 # D:\Program Files\10 2020-q4-major\bin (key D:/Program Files/10 2020-q4-major/bin, mtime 1627658616): 35 files, no impossibilities.
 # %QUARTUS_ROOTDIR%\bin: could not be stat'd.
 # C:\ffmpeg-20191126-59d264b-win64-static\bin (key C:/ffmpeg-20191126-59d264b-win64-static/bin, mtime 1574716476): 5 files, no impossibilities.
-# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1626478187): 13 files, no impossibilities.
+# C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/D 
+ocker/Docker/resources/bin, mtime 1626478187): 13 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1619367265): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\Users\dell\.dotnet\tools: could not be stat'd.
@@ -341,7 +354,8 @@ iles, no impossibilities.
 # C:\emsdk: could not be stat'd.
 # C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler, mtime 1616141856): 17 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1569901937): 136 files, no impossibilities.
-# C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin (key C:/Users/dell/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin, mtime 1627029508): 20 files, no impossibilities.
+# C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin (key C:/Use 
+rs/dell/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin, mtime 1627029508): 20 files, no impossibilities.
 # C:\emsdk\python\3.7.4-pywin32_64bit: could not be stat'd.
 # ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM (key c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM, mtime 1628586443): 274 files, no impossibilities so far.
 # C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1622368219): 4 files, no impossibilities.
@@ -349,7 +363,8 @@ iles, no impossibilities.
 # C:\Program Files\OpenVPN\bin (key C:/Program Files/OpenVPN/bin, mtime 1618894623): 13 files, no impossibilities.
 # C:\Users\dell\Anaconda3\Scripts (key C:/Users/dell/Anaconda3/Scripts, mtime 1624243640): 310 files, no impossibilities.
 # C:\altera\91\modelsim_ase\win32aloem: could not be stat'd.
-# C:\emsdk\java\8.152_64bit\bin: could not be stat'd.
+# C:\emsdk\java\8.152_64bit\bin: could not be stat'd 
+.
 # C:\Users\dell\Anaconda3\Library\mingw-w64\bin (key C:/Users/dell/Anaconda3/Library/mingw-w64/bin, mtime 1568540554): 15 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1622304338): 11 files, no impossibilities.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1614851713): 32 files, no impossibilities.
@@ -358,7 +373,8 @@ iles, no impossibilities.
 # C:\Program Files\WireGuard\ (key C:/Program Files/WireGuard/, mtime 1628313375): 5 files, no impossibilities.
 # C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1596738902): 11 files, no impossibilities.
 # D:\Program Files\Mtlb\polyspace\bin (key D:/Program Files/Mtlb/polyspace/bin, mtime 1614648544): 82 files, no impossibilities.
-# C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
+# C:\WINDOWS\System32\OpenSSH\: could no 
+t be stat'd.
 # C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1613111116): 12 files, no impossibilities.
 # C:\emsdk\upstream\emscripten: could not be stat'd.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1628763614): 3138 files, no impossibilities.
@@ -385,7 +401,8 @@ iles, no impossibilities.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/STM32F411XE.ld:
+../mbed/TARGET_NUCLEO_F411RE/TOOL 
+CHAIN_GCC_ARM/STM32F411XE.ld:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/STM32F411XE.ld'
 #  Last modified 2019-02-22 19:02:08
@@ -406,8 +423,7 @@ iles, no impossibilities.
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.h'
-#  Last modified 2019-02-22 19: 
-02:14
+#  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -419,7 +435,8 @@ iles, no impossibilities.
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm 
+_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/drivers/AnalogIn.h:
@@ -455,7 +472,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe 
+ to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.d:
@@ -498,7 +516,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/device.h'
 #  Last modified 2019-02-22 19:02:10
-#  File has been updated.
+#  File has been updat 
+ed.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -521,7 +540,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_d 
+ma.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o'
 #  Last modified 2019-02-22 19:02:12
@@ -554,11 +574,14 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Docum 
+ents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-TCS230.elf: main.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/i2c_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pinmap.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/qspi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o ../mbed/TARGET 
-_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o TCS230.link_script.ld
+TCS230.elf: main.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/i2c_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pinmap.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/qspi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o ../mbed/TARGET_NUCL 
+EO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_l 
+tdc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o ../mbed/TARGET_N 
+UCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o TCS230.link_script.ld
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  Modification time never checked.
@@ -579,7 +602,8 @@ _NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHA
 # automatic
 # ^ := main.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/i2c_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pinmap.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/qspi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o TCS230.link_script.ld
 # automatic
-# ? := main.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/i2c_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pinmap.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/qspi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o TCS230.link_script.ld
+# ? := main.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralPins.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/i2c_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_retarget.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pinmap.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/qspi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_gpio.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_utils.o 
+ ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm_spi_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.o ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o TCS230.link_script.ld
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/28=4%
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 462):
@@ -663,7 +687,8 @@ TCS230.hex: TCS230.elf
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to exe 
+cute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.h:
@@ -696,7 +721,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.d:
 ../mbed/platform/mbed_mpu_mgmt.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/platform/mbed_mpu_mgmt.h'
-#  Last modified 2019-02-22 19:25:04
+#  Last modified 2019-02-2 
+2 19:25:04
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -720,7 +746,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.d:
+mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/fla 
+sh_api.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.d'
 #  File does not exist.
@@ -742,7 +769,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/flash_api.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_compiler.h'
 #  Last modified 2019-02-22 19:02:10
-#  File has been updated.
+#  File ha 
+s been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -776,7 +804,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.h'
+#  Implicit/stati 
+c pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.h'
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
@@ -798,7 +827,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  re 
+cipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 all: TCS230.bin TCS230.hex size
@@ -834,7 +864,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gc 
+c_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/can_api.d:
@@ -869,7 +900,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d'
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Successfully 
+ updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -879,7 +911,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vs 
+code_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.h:
@@ -892,7 +925,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 	
 
 .PHONY: all lst size
-#  Implicit rule search has not been done.
+#  Imp 
+licit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -907,7 +941,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 
 ../mbed/hal/buffer.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/hal/buffer.h'
+#  Implic 
+it/static pattern stem: '../mbed/hal/buffer.h'
 #  Last modified 2019-02-22 19:25:02
 #  File has been updated.
 #  Successfully updated.
@@ -918,6 +953,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.h'
 #  Last modified 2019-02-22 19:02:18
+ 
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -929,7 +965,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.d:
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230 
+/Makefile', line 487):
 	
 
 ../mbed/drivers/TimerEvent.h:
@@ -954,7 +991,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/sleep.d'
 #  File does not exist.
-#  File has been updated.
+#  File has been u 
+pdated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -988,7 +1026,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o'
+#  Impl 
+icit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o'
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
@@ -1022,7 +1061,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ 
+ll_fmc.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o'
 #  Last modified 2019-02-22 19:02:16
@@ -1087,7 +1127,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.o'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4x 
+x_hal_mmc.o'
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
@@ -1132,7 +1173,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_exti.d:
 
 c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile'
+#  Implicit/static pattern stem: 'c:/Users/dell/Documents/Dev/Mbed/TCS 
+230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile'
 #  Last modified 2021-08-10 16:09:55
 #  File has been updated.
 #  Successfully updated.
@@ -1154,7 +1196,8 @@ c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Make
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Make 
+file', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralNames.h:
@@ -1176,9 +1219,9 @@ c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Make
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.h:
-#  Implicit rule s 
-earch has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.h'
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '.. 
+/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.h'
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
@@ -1200,7 +1243,8 @@ earch has been done.
 #  Last modified 2019-02-22 19:02:08
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile' 
+, line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.o:
@@ -1223,7 +1267,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.o'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_c 
+ontext.o'
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
@@ -1245,7 +1290,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rng.d:
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f41 
+1re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.d:
@@ -1268,7 +1314,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.h'
+#  Implicit/static pattern stem: '.. 
+/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.h'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
@@ -1278,7 +1325,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.d:
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.d'
-#  File does not exist.
+#  File does not  
+exist.
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1291,7 +1339,8 @@ TCS230.bin: TCS230.elf
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/16=0%
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 468):
-	$(ELF2BIN) -O binary $< $@
+	 
+$(ELF2BIN) -O binary $< $@
 	+@echo "===== bin file ready to flash: $(OBJDIR)/$@ =====" 
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_spi.o:
@@ -1303,7 +1352,8 @@ TCS230.bin: TCS230.elf
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o:
+.. 
+/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.o'
 #  Last modified 2019-02-22 19:02:16
@@ -1313,7 +1363,8 @@ TCS230.bin: TCS230.elf
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o:
-#  Implicit rule search has been done.
+#  Implicit rule sea 
+rch has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.o'
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
@@ -1323,7 +1374,8 @@ TCS230.bin: TCS230.elf
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.h'
+#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLC 
+HAIN_GCC_ARM/stm32f4xx_hal_sram.h'
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
@@ -1334,7 +1386,8 @@ TCS230.bin: TCS230.elf
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o'
 #  Last modified 2019-02-22 19:02:10
-#  File has been updated.
+#  File has b 
+een updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -1345,7 +1398,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230 
+_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/hal/pwmout_api.h:
@@ -1380,7 +1434,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
-#  Successfully updated.
+#  Successfully upd 
+ated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -1414,7 +1469,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.o'
-#  Last modified 2019-02-22 19:02:10
+#  L 
+ast modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1439,7 +1495,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_tim.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o'
 #  Last modified 2019-02-22 19:02:14
-#  File has been updated.
+#   
+File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -1475,7 +1532,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/hal/gpio_irq_api.h'
 #  Last modified 2019-02-22 19:25:02
-#  File has been updated.
+#  File 
+ has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -1522,7 +1580,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.d:
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#   
+recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/common_objects.h:
@@ -1557,7 +1616,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.d'
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Suc 
+cessfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -1567,8 +1627,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/lp_ticker.d:
 #  Last modified 2019-02-22 19:25:02
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re 
-/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.d:
@@ -1582,7 +1641,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o'
+#  Implicit/static pattern stem: 'mbed/TA 
+RGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
@@ -1628,7 +1688,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.d:
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.d'
-#  File does not exist.
+#  File does not e 
+xist.
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1664,7 +1725,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.h'
-#  Last modified 2019-02-22 19:02:16
+#  Last modified 2 
+019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1710,7 +1772,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.h'
 #  Last modified 2019-02-22 19:02:14
-#  File has been updated.
+#  File has b 
+een updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -1745,7 +1808,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.d:
 ../mbed/platform/mbed_retarget.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/platform/mbed_retarget.h'
-#  Last modified 2019-02-22 19:25:04
+#  Last modified 2019-02-22 19:2 
+5:04
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1780,7 +1844,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o'
+#  I 
+mplicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o'
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
@@ -1812,7 +1877,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/trng_api.d:
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
-	
+	 
+
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.o:
 #  Implicit rule search has been done.
@@ -1859,7 +1925,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.h:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM 
+/stm32f4xx_hal_pwr.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.h'
 #  Last modified 2019-02-22 19:02:14
@@ -1881,7 +1948,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.d'
 #  File does not exist.
-#  File has been updated.
+#  File has been upd 
+ated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -1889,7 +1957,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.d:
 ../main.cpp:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../main.cpp'
-#  Last modified 2021-08-10 18:00:28
+#  Last modified 2021-08-13 14:35:17
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1915,9 +1983,9 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_i2c.d:
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.d:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F 
-411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.d'
-#  File does not exist.
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.d'
+#  File d 
+oes not exist.
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -1961,7 +2029,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_crc.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_api.o'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE 
+/TOOLCHAIN_GCC_ARM/analogin_api.o'
 #  Last modified 2019-02-22 19:02:08
 #  File has been updated.
 #  Successfully updated.
@@ -2002,7 +2071,8 @@ size:
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o:
-#  Implicit rule search has been done.
+#  Impli 
+cit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rcc.o'
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
@@ -2034,7 +2104,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re 
+/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/us_ticker.d:
@@ -2068,7 +2139,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick_overrides.d'
 #  File does not exist.
-#  File has been updated.
+#  File has been updat 
+ed.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2115,7 +2187,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.d:
 #  Last modified 2019-02-22 19:25:00
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS23 
+0_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o:
@@ -2147,7 +2220,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.h'
+#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s 
+.h'
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
@@ -2194,7 +2268,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.h'
 #  Last modified 2019-02-22 19:02:16
-#  File has been updated.
+#  File has  
+been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2241,7 +2316,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c: 
+/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis.h:
@@ -2250,8 +2326,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.d:
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_ 
-nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.d:
@@ -2287,7 +2362,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/spi_api.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Us 
+ers/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.d:
@@ -2322,7 +2398,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.d:
 #  Implicit/static pattern stem: '../mbed/drivers/I2C.h'
 #  Last modified 2019-02-22 19:25:00
 #  File has been updated.
-#  Successfully updated.
+#  Successfully updat 
+ed.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -2359,7 +2436,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_irq_device.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/ 
+Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.o:
@@ -2394,7 +2472,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_fault_handler.d'
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Succe 
+ssfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -2439,14 +2518,15 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.d:
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.h'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
-#  Successfully updated.
+#  Su 
+ccessfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 main.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main.d'
-#  Last modified 2021-08-13 14:24:57
+#  Last modified 2021-08-13 17:39:59
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -2474,7 +2554,8 @@ main.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNamesTypes.h'
 #  Last modified 2019-02-22 19:02:08
-#  File has been updated.
+#  
+ File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2508,7 +2589,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_clock.d:
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.d:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.d'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO 
+_F411RE/TOOLCHAIN_GCC_ARM/serial_api.d'
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
@@ -2557,7 +2639,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.d:
 #  Last modified 2019-02-22 19:25:00
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to ex 
+ecute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.h:
@@ -2590,7 +2673,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32_hal_legacy.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32_hal_legacy.h'
-#  Last modified 2019-02-22 19:02:12
+#  Last modified 
+ 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -2625,7 +2709,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o'
+#  Implicit/static pattern stem: 'm 
+bed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
@@ -2661,7 +2746,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.d:
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.d:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.d'
+#  Implicit/static pattern stem 
+: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.d'
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
@@ -2711,8 +2797,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_device.d:
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o:
-#  Imp 
-licit rule search has been done.
+#  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/rtc_api.o'
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
@@ -2724,7 +2809,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.d'
 #  File does not exist.
-#  File has been updated.
+#   
+File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2761,7 +2847,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.d:
 #  Implicit/static pattern stem: '../mbed/platform/mbed_interface.h'
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
-#  Successfully updated.
+#  Succe 
+ssfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -2776,7 +2863,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.d:
 
 TCS230.link_script.ld: ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/STM32F411XE.ld
 #  Implicit rule search has not been done.
-#  Last modified 2021-08-13 14:25:06
+#  Last modified 2021-08-13 17:40:04
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 457):
@@ -2795,7 +2882,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.d'
 #  File does not exist.
-#  File has been updated.
+#  File has b 
+een updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2831,7 +2919,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/drivers/PortOut.h'
 #  Last modified 2019-02-22 19:25:02
-#  File has been updated.
+#  File has been update 
+d.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -2865,7 +2954,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.d:
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.d:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.d'
+#  Implicit/s 
+tatic pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.d'
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
@@ -2901,7 +2991,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h'
+#  Implicit/ 
+static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h'
 #  Last modified 2019-02-22 19:02:08
 #  File has been updated.
 #  Successfully updated.
@@ -2932,7 +3023,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_pwr.d:
 #  Last modified 2019-02-22 19:02:18
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230 
+/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.d:
@@ -2966,7 +3058,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.d'
 #  File does not exist.
-#  File has been updated.
+#  File has been updated. 
+
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -3013,7 +3106,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.d:
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f41 
+1re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.h:
@@ -3035,8 +3129,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.d:
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.h:
-#  Implicit ru 
-le search has been done.
+#  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.h'
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
@@ -3059,7 +3152,8 @@ le search has been done.
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe  
+to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o:
@@ -3093,7 +3187,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.d'
 #  File does not exist.
-#  File has been updated.
+#  File has  
+been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -3136,7 +3231,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_l 
+l_usb.o'
 #  Last modified 2019-02-22 19:02:18
 #  File has been updated.
 #  Successfully updated.
@@ -3171,7 +3267,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.d:
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.d:
-#  Implicit rule search has been done.
+#  Implicit rule search has bee 
+n done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai_ex.d'
 #  File does not exist.
 #  File has been updated.
@@ -3203,7 +3300,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucle 
+o_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.d:
@@ -3239,7 +3337,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TC 
+S230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.h:
@@ -3271,8 +3370,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.d:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4 
-xx_hal_sram.o'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o'
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
@@ -3285,7 +3383,8 @@ xx_hal_sram.o'
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mb 
+ed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/except.d:
@@ -3323,7 +3422,8 @@ lst:
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o'
+#  Implicit/static pattern stem: 'mbed/TA 
+RGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_device.o'
 #  Last modified 2019-02-22 19:02:08
 #  File has been updated.
 #  Successfully updated.
@@ -3358,7 +3458,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.d:
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o:
-#  Implicit rule search has been done.
+#  Implicit rule se 
+arch has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o'
 #  Last modified 2019-02-22 19:02:18
 #  File has been updated.
@@ -3394,7 +3495,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/pwmout_api.d:
 	
 
 ../mbed/platform/FileLike.h:
-#  Implicit rule search has been done.
+#  Implicit rule s 
+earch has been done.
 #  Implicit/static pattern stem: '../mbed/platform/FileLike.h'
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
@@ -3430,7 +3532,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.d:
 	
 
 ../mbed/platform/CThunk.h:
-#  Implicit rule search has been done.
+#  Implicit rule search has been do 
+ne.
 #  Implicit/static pattern stem: '../mbed/platform/CThunk.h'
 #  Last modified 2019-02-22 19:25:02
 #  File has been updated.
@@ -3465,7 +3568,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f 
+4xx_hal_cryp_ex.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o'
 #  Last modified 2019-02-22 19:02:12
@@ -3498,7 +3602,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma.d:
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/ 
+Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.d:
@@ -3534,7 +3639,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.d:
 #  Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c: 
+/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_crc_api.o:
@@ -3555,8 +3661,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm 
-32f4xx_hal_adc.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o'
 #  Last modified 2019-02-22 19:02:12
@@ -3580,7 +3685,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.d:
 #  Last modified 2019-02-22 19:02:16
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Docu 
+ments/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.d:
@@ -3592,11 +3698,14 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-main.o: ../main.cpp .././mbed_config.h ../mbed/mbed.h ../mbed/platform/mbed_version.h ../mbed/platform/mbed_toolchain.h ../mbed/platform/mbed_preprocessor.h ../mbed/platform/platform.h ../mbed/platform/mbed_retarget.h ../mbed/platform/mbed_toolchain.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/device.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/objects.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f411xe.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/core_cm4.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_version.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_compiler.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_gcc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mpu_armv7.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_conf.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_def.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32_hal_legacy.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_nvic.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PortNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNamesTypes.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/common_objects.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_object.h ../mbed/platform/mbed_assert.h ../mbed/platform/mbed_toolchain.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralNames.h ../mbed/platform/mbed_application.h ../mbed/platform/mbed_error.h ../mbed/platform/mbed_interface.h ../mbed/platform/mbed_assert.h ../mbed/platform/mbed_debug.h ../mbed/drivers/DigitalIn.h ../mbed/platform/platform.h ../mbed/hal/gpio_api.h ../mbed/platform/mbed_critical.h ../mbed/drivers/DigitalOut.h ../mbed/drivers/DigitalInOut.h ../mbed/drivers/BusIn.h ../mbed/drivers/DigitalIn.h ../mbed/platform/PlatformMutex.h ../mbed/platform/NonCopyable.h ../mbed/platform/mbed_debug.h ../mbed/drivers/BusOut.h ../mbed/drivers/DigitalOut.h ../mbed/drivers/BusInOut.h ../mbed/drivers/DigitalInOut.h ../mbed/drivers/PortIn.h ../mbed/hal/port_api.h ../mbed/drivers/PortInOut.h ../mbed/drivers/PortOut.h ../mbed/drivers/AnalogIn.h ../mbed/hal/analogin_api.h ../mbed/platform/SingletonPtr.h ../mbed/platform/mbed_assert.h ../mbed/drivers/AnalogOut.h ../mbed/drivers/PwmOut.h ../mbed/hal/pwmout_api.h ../mbed/platform/mbed_power_mgmt.h ../mbed/hal/sleep_api.h ../mbed/hal/ticker_api.h ../mbed/drivers/Serial.h ../mbed/platform/Stream.h ../mbed/platform/FileLike.h ../mbed/platform/FileBase.h ../mbed/platform/FileHandle.h ../mbed/platform/Callback.h ../mbed/platform/mbed_poll.h ../mbed/drivers/SerialBase.h ../mbed/platform/Callback.h ../mbed/hal/serial_api.h ../mbed/hal/buffer.h ../mbed/hal/dma_api.h ../mbed/platform/CThunk.h ../mbed/platform/CThunkBase.h ../mbed/drivers/SPI.h ../mbed/hal/spi_api.h ../mbed/platform/CircularBuffer.h ../mbed/platform/FunctionPointer.h ../mbed/platform/Transaction.h ../mbed/drivers/SPISlave.h ../mbed/drivers/I2C.h ../mbed/hal/i2c_api.h ../mbed/drivers/I2CSlave.h ../mbed/drivers/Eth 
-ernet.h ../mbed/drivers/CAN.h ../mbed/drivers/RawSerial.h ../mbed/platform/mbed_toolchain.h ../mbed/drivers/SerialBase.h ../mbed/drivers/UARTSerial.h ../mbed/drivers/InterruptIn.h ../mbed/hal/gpio_irq_api.h ../mbed/drivers/FlashIAP.h ../mbed/hal/flash_api.h ../mbed/drivers/MbedCRC.h ../mbed/drivers/TableCRC.h ../mbed/hal/crc_api.h ../mbed/drivers/QSPI.h ../mbed/drivers/Timer.h ../mbed/drivers/Ticker.h ../mbed/drivers/TimerEvent.h ../mbed/hal/us_ticker_api.h ../mbed/hal/lp_ticker_api.h ../mbed/drivers/Timeout.h ../mbed/drivers/Ticker.h ../mbed/drivers/LowPowerTimeout.h ../mbed/drivers/LowPowerTicker.h ../mbed/drivers/LowPowerTicker.h ../mbed/drivers/LowPowerTimer.h ../mbed/drivers/Timer.h ../mbed/platform/LocalFileSystem.h ../mbed/drivers/InterruptIn.h ../mbed/platform/mbed_wait_api.h ../mbed/hal/sleep_api.h ../mbed/platform/mbed_power_mgmt.h ../mbed/platform/mbed_rtc_time.h ../mbed/platform/mbed_poll.h ../mbed/platform/ATCmdParser.h ../mbed/platform/NonCopyable.h ../mbed/platform/FileHandle.h ../mbed/platform/FileSystemHandle.h ../mbed/platform/DirHandle.h ../mbed/platform/FileHandle.h ../mbed/platform/DirHandle.h ../mbed/platform/CriticalSectionLock.h ../mbed/platform/DeepSleepLock.h ../mbed/platform/ScopedRomWriteLock.h ../mbed/platform/mbed_mpu_mgmt.h ../mbed/hal/mpu_api.h ../mbed/platform/ScopedRamExecutionLock.h ../mbed/platform/mbed_stats.h ../mbed/platform/Callback.h ../mbed/platform/FunctionPointer.h ../mbed/platform/ScopedLock.h
+main.o: ../main.cpp .././mbed_config.h ../mbed/mbed.h ../mbed/platform/mbed_version.h ../mbed/platform/mbed_toolchain.h ../mbed/platform/mbed_preprocessor.h ../mbed/platform/platform.h ../mbed/platform/mbed_retarget.h ../mbed/platform/mbed_toolchain.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/device.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/objects.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f411xe.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/core_cm4.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_version.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_compiler.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_gcc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mpu_armv7.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_conf.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_def.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32_hal_legacy.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_A 
+RM/stm32f4xx_hal_dma_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_adc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can_legacy.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_rtc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.h ../mbed/TARGET_NUCLEO_F411RE/T 
+OOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dsi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_qspi.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cec.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spdifrx.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dfsdm.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_lptim.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_nvic.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PortNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNamesTypes.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/common_objects.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/gpio_object.h ../mbed/platform/mbed_assert.h ../mbed/platform/mbed_toolchain.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PinNames.h ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/PeripheralNames.h ../mbed/platform/mbed_application.h ../mbed/platform/mbed_error.h ../mbed/platform/mbed_interface.h ../mbed/platform/mbed_assert.h ../mbed/platform/mbed_debug.h ../mbed/drivers/DigitalIn.h ../mbed/platform/platform.h ../mbed/hal/gpio_api.h ../mbed/platform/mbed_critical.h ../mbed/drivers/DigitalOut.h ../mbed/drivers/DigitalInOut.h ../mbed/drivers/BusIn.h ../mbed/drivers/DigitalIn.h ../mbed/platform/PlatformMutex.h ../mbed/platform/NonCopyable.h ../mbed/platform/mbed_debug.h ../mbed/drivers/BusOut.h ../mbed/drivers/DigitalOut.h ../mbed/drivers/BusInOut.h ../mbed/drivers/DigitalInOut.h ../mbed/drivers/PortIn.h ../mbed/hal/port_api.h .. 
+/mbed/drivers/PortInOut.h ../mbed/drivers/PortOut.h ../mbed/drivers/AnalogIn.h ../mbed/hal/analogin_api.h ../mbed/platform/SingletonPtr.h ../mbed/platform/mbed_assert.h ../mbed/drivers/AnalogOut.h ../mbed/drivers/PwmOut.h ../mbed/hal/pwmout_api.h ../mbed/platform/mbed_power_mgmt.h ../mbed/hal/sleep_api.h ../mbed/hal/ticker_api.h ../mbed/drivers/Serial.h ../mbed/platform/Stream.h ../mbed/platform/FileLike.h ../mbed/platform/FileBase.h ../mbed/platform/FileHandle.h ../mbed/platform/Callback.h ../mbed/platform/mbed_poll.h ../mbed/drivers/SerialBase.h ../mbed/platform/Callback.h ../mbed/hal/serial_api.h ../mbed/hal/buffer.h ../mbed/hal/dma_api.h ../mbed/platform/CThunk.h ../mbed/platform/CThunkBase.h ../mbed/drivers/SPI.h ../mbed/hal/spi_api.h ../mbed/platform/CircularBuffer.h ../mbed/platform/FunctionPointer.h ../mbed/platform/Transaction.h ../mbed/drivers/SPISlave.h ../mbed/drivers/I2C.h ../mbed/hal/i2c_api.h ../mbed/drivers/I2CSlave.h ../mbed/drivers/Ethernet.h ../mbed/drivers/CAN.h ../mbed/drivers/RawSerial.h 
+ ../mbed/platform/mbed_toolchain.h ../mbed/drivers/SerialBase.h ../mbed/drivers/UARTSerial.h ../mbed/drivers/InterruptIn.h ../mbed/hal/gpio_irq_api.h ../mbed/drivers/FlashIAP.h ../mbed/hal/flash_api.h ../mbed/drivers/MbedCRC.h ../mbed/drivers/TableCRC.h ../mbed/hal/crc_api.h ../mbed/drivers/QSPI.h ../mbed/drivers/Timer.h ../mbed/drivers/Ticker.h ../mbed/drivers/TimerEvent.h ../mbed/hal/us_ticker_api.h ../mbed/hal/lp_ticker_api.h ../mbed/drivers/Timeout.h ../mbed/drivers/Ticker.h ../mbed/drivers/LowPowerTimeout.h ../mbed/drivers/LowPowerTicker.h ../mbed/drivers/LowPowerTicker.h ../mbed/drivers/LowPowerTimer.h ../mbed/drivers/Timer.h ../mbed/platform/LocalFileSystem.h ../mbed/drivers/InterruptIn.h ../mbed/platform/mbed_wait_api.h ../mbed/hal/sleep_api.h ../mbed/platform/mbed_power_mgmt.h ../mbed/platform/mbed_rtc_time.h ../mbed/platform/mbed_poll.h ../mbed/platform/ATCmdParser.h ../mbed/platform/NonCopyable.h ../mbed/platform/FileHandle.h ../mbed/platform/FileSystemHandle.h ../mbed/platform/DirHandle.h ../mbed/platform/FileHandle.h ../mbed/platform/DirHandle.h ../mbed/platform/CriticalSectionLock.h ../mbed/platform/DeepSleepLock.h ../mbed/platform/ScopedRomWriteLock.h ../mbed/platform/mbed_mpu_mgmt.h ../mbed/hal/mpu_api.h ../mbed/platform/ScopedRamExecutionLock.h ../mbed/platform/mbed_stats.h ../mbed/platform/Callback.h ../mbed/platform/FunctionPointer.h ../mbed/platform/ScopedLock.h
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main.o'
-#  Last modified 2021-08-13 14:24:58
+#  Last modified 2021-08-13 17:40:00
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -3608,7 +3717,8 @@ ernet.h ../mbed/drivers/CAN.h ../mbed/drivers/RawSerial.h ../mbed/platform/mbed_
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users/dell/Documents/Dev/ 
+Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/drivers/CAN.h:
@@ -3656,7 +3766,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o:
+../mbed/TARGET_NUCLEO_F411 
+RE/TOOLCHAIN_GCC_ARM/serial_device.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_device.o'
 #  Last modified 2019-02-22 19:02:10
@@ -3677,7 +3788,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o'
-#  Last modified 2019-02-22 19:02:14
+#   
+Last modified 2019-02-22 19:02:14
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -3712,7 +3824,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.d:
 
 ../mbed/drivers/DigitalOut.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/drivers/DigitalOut.h'
+#  Implicit/static pattern stem: '../mbed/drivers/DigitalOut.h' 
+
 #  Last modified 2019-02-22 19:25:00
 #  File has been updated.
 #  Successfully updated.
@@ -3760,7 +3873,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.d:
 #  Implicit/static pattern stem: '../mbed/platform/ScopedRamExecutionLock.h'
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
-#  Successfully updated.
+#  Successfully  
+updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -3794,7 +3908,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx.h'
-#  Last modified 2019-02-22 19:02:12
+#  Last modified 2019-0 
+2-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -3833,7 +3948,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.d:
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to  
+execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.h:
@@ -3866,7 +3982,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_fmpi2c.d:
 ../mbed/drivers/PortInOut.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/drivers/PortInOut.h'
-#  Last modified 2019-02-22 19:25:02
+#  Last modified 2019- 
+02-22 19:25:02
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -3910,7 +4027,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_mmc.d:
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.d:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.d'
+#  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOL 
+CHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.d'
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
@@ -3920,8 +4038,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.d:
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.d'
-#  File do 
-es not exist.
+#  File does not exist.
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -3945,7 +4062,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_conf.h:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_conf 
+.h:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_conf.h'
 #  Last modified 2019-02-22 19:02:12
@@ -3982,7 +4100,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogout_api.d:
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.d:
-#  Implicit rule search has been done.
+#  Im 
+plicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.d'
 #  File does not exist.
 #  File has been updated.
@@ -4019,7 +4138,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.d:
 
 ../mbed/platform/FileHandle.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/platform/FileHandle.h'
+#  Im 
+plicit/static pattern stem: '../mbed/platform/FileHandle.h'
 #  Last modified 2019-02-22 19:25:04
 #  File has been updated.
 #  Successfully updated.
@@ -4054,7 +4174,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_tz_context.d:
 	
 
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio_ex.h:
-#  Implicit rule search has been done.
+#  Implicit rule search h 
+as been done.
 #  Implicit/static pattern stem: '../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio_ex.h'
 #  Last modified 2019-02-22 19:02:12
 #  File has been updated.
@@ -4098,7 +4219,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_lptim.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.d:
+mbed/TARGET_NUCLEO_F411RE/TOOL 
+CHAIN_GCC_ARM/stm32f4xx_ll_dma2d.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dma2d.d'
 #  File does not exist.
@@ -4131,7 +4253,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_dac.d:
 #  File does not exist.
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
+#  recipe to execute (from 'c:/Users 
+/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
 mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.d:
@@ -4166,7 +4289,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.d'
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Successfully update 
+d.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -4188,7 +4312,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_devi 
+ce.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/analogin_device.o'
 #  Last modified 2019-02-22 19:02:08
@@ -4209,7 +4334,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usart.d:
 ../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o'
-#  Last modified 2019-02-22 19:02:16
+#  Last modified 2019-02-22 19:0 
+2:16
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
@@ -4233,8 +4359,7 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_board.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-../mbed/TARGET_NUCLEO_F411R 
-E/TOOLCHAIN_GCC_ARM/serial_api.o:
+../mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/serial_api.o'
 #  Last modified 2019-02-22 19:02:10
@@ -4247,7 +4372,8 @@ E/TOOLCHAIN_GCC_ARM/serial_api.o:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: '../mbed/platform/mbed_toolchain.h'
 #  Last modified 2019-02-22 19:25:04
-#  File has been updated.
+#  File 
+ has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
@@ -4293,7 +4419,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.d:
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/port_api.o'
 #  Last modified 2019-02-22 19:02:10
 #  File has been updated.
-#  Successfully updated.
+#  Successfully upda 
+ted.
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
@@ -4317,7 +4444,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.d:
 
 ../mbed/platform/Callback.h:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: '../mbed/platform/Callback.h'
+#  Implicit/static pattern stem: '../mbed/platform/Ca 
+llback.h'
 #  Last modified 2019-02-22 19:25:02
 #  File has been updated.
 #  Successfully updated.
@@ -4342,7 +4470,8 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.d:
 #  recipe to execute (from 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile', line 487):
 	
 
-mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.d:
+mbed/TARGET_NUCLEO_F411RE/TOOLC 
+HAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.d:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.d'
 #  File does not exist.
@@ -4367,10 +4496,10 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.d:
 # No 'vpath' search paths.
 
 # General ('VPATH' variable) search path:
-# . 
-.
+# ..
 
-# strcache buffers: 16 (15) / strings = 6316 / storage = 123124 B / avg = 19 B
+# strcache buffers: 16 (15) / strings = 6316 / storage 
+ = 123124 B / avg = 19 B
 # current buf: size = 8174 B / used = 639 B / count = 19 / avg = 33 B
 # other used: total = 114950 B / count = 6297 / avg = 18 B
 # other free: total = 125 B / max = 13 B / min = 2 B / avg = 8 B
@@ -4378,12 +4507,15 @@ mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.d:
 # strcache performance: lookups = 10716 / hit rate = 41%
 # hash-table stats:
 # Load=6316/8192=77%, Rehash=0, Collisions=8959/10716=84%
-# Finished Make data base on Fri Aug 13 14:25:09 2021
+# Finished Make data base on Fri Aug 13 17:40:05 2021
 
  
 c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile:25: recipe for target 'all' failed
+ 
+mingw32-make.exe: *** [all] Error 2
+ 
 
-# Make data base, printed on Fri Aug 13 14:25:09 2021
+# Make data base, printed on Fri Aug 13 17:40:05 2021
 
 # Variables
 
@@ -4399,6 +4531,8 @@ MAKEFLAGS = Rrp
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+PLATFORMIO_IDE = 2.3.2
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
@@ -4438,11 +4572,11 @@ NVM_SYMLINK = C:\Program Files\nodejs
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-88165dac-9625-4737-bf9c-6b373a67468e-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-74635b42-8195-46ac-a35a-55a6874420d2-sock
 # environment
 VSCODE_CWD = C:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230
 # environment
-PATH = D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;%QUARTUS_ROOTDIR%\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
+NO_PROXY = 127.0.0.1
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -4466,7 +4600,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4676_TCEXSFQYKJSLGWRN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12392_GALMWMQFFFHTWZPC
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -4488,7 +4622,8 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProce
 # environment
 GOOGLE_DEFAULT_CLIENT_ID = no
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\dell\AppData\Roaming\Code\CachedData\379476f0e13988d90fab105c5c19e7abc8b1dea8
+VSCODE_CODE_CACHE_PATH = C:\U 
+sers\dell\AppData\Roaming\Code\CachedData\379476f0e13988d90fab105c5c19e7abc8b1dea8
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
@@ -4503,10 +4638,14 @@ USERDOMAIN = IMAM-EL18
 MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
 # environment
 MAKELEVEL := 0
+# environment
+PLATFORMIO_PATH = C:\Users\dell\.platformio\penv\Scripts;C:\Users\dell\.platformio\penv;C:\Users\dell\.platformio\python3;D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;;D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+# environment
+PATH = D:\Program Files\JDK11\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;d:\program files\altera\quartus\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;%QUARTUS_ROOTDIR%\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;D:\Program Files\Mtlb\runtime\win64;D:\Program Files\Mtlb\bin;D:\Program Files\Mtlb\polyspace\bin;C:\Program Files\OpenVPN\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\mylib;;C;C:\Program Files\WireGuard\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files\10 2020-q4-major\bin;C:\emsdk;C:\emsdk\node\12.18.1_64bit\bin;C:\emsdk\python\3.7.4-pywin32_64bit;C:\emsdk\java\8.152_64bit\bin;C:\emsdk\upstream\emscripten;C:\altera\91\modelsim_ase\win32aloem;C:\Users\dell\AppData\Local\Microsoft\WindowsApps;C:\Users\dell\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\HP\Common\HPDestPlgIn\;C:\Users\dell\Anaconda3;C:\Users\dell\Anaconda3\Scripts;C:\Users\dell\Anaconda3\Library\bin;C:\Users\dell\Anaconda3\Library\mingw-w64\bin;C:\ffmpeg-20191126-59d264b-win64-static\bin;C:\Users\dell\AppData\Roaming\npm;C:\Users\dell\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\flutter\bin;C:\Users\dell\.dotnet\tools;C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\10 2020-q4-major\bin;C:\Program Files (x86)\GnuWin32\bin;
 # environment
 QT_DEVICE_PIXEL_RATIO = auto
 # environment
@@ -4535,7 +4674,8 @@ MAKE_COMMAND := mingw32-make.exe
 PROCESSOR_ARCHITEW6432 = AMD64
 # default
 .VARIABLES := 
-# automatic
+# aut 
+omatic
 *F = $(notdir $*)
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
@@ -4574,9 +4714,12 @@ MAKEFILES :=
 # environment
 IDF_TOOLS_PATH = C:\Users\dell\.espressif
 # environment
-VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
+VSCODE_BROWSER_ 
+CODE_LOADING = bypassHeatCheck
 # automatic
 <F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
 # makefile (from 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 16)
 OBJDIR := BUILD
 # environment
@@ -4593,7 +4736,8 @@ SESSIONNAME = Console
 PROCESSOR_REVISION = 8e0c
 # environment
 ADSK_CLM_WPAD_PROXY_CHECK = FALSE
-# makefile (from 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 9)
+# makefile (from 'c:\Users\dell\Documents\Dev\M 
+bed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 9)
 MAKEDIR = if not exist "$(1)" mkdir "$(1)"
 # default
 .RECIPEPREFIX := 
@@ -4604,16 +4748,14 @@ PROCESSOR_LEVEL = 6
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 4676
+VSCODE_PID = 12392
 # makefile (from 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 20)
-mkfile_path := c:/Users/dell/Documents/Dev/Mbed/T 
-mingw32-make.exe: *** [all] Error 2
- 
-CS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile
-# environment
+mkfile_path := c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230/Makefile
+# envi 
+ronment
 USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=17/155=11%
+# Load=115/1024=11%, Rehash=0, Collisions=23/159=14%
 
 # Pattern-specific Variable Values
 
@@ -4629,14 +4771,16 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # D:\Program Files\Mtlb\bin (key D:/Program Files/Mtlb/bin, mtime 1623553760): 49 files, no impossibilities.
 # C:\Users\dell\AppData\Roaming\nvm (key C:/Users/dell/AppData/Roaming/nvm, mtime 1596738985): 13 files, no impossibilities.
 # C:\emsdk\node\12.18.1_64bit\bin: could not be stat'd.
-# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1570715904): 5 files, no impossibilities.
+# C:\Program Files\NVIDIA Corporation\ 
+NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1570715904): 5 files, no impossibilities.
 # C:\Program Files\Intel\WiFi\bin\ (key C:/Program Files/Intel/WiFi/bin/, mtime 1562152127): 27 files, no impossibilities.
 # C:\Program Files\Common Files\Intel\WirelessCommon\ (key C:/Program Files/Common Files/Intel/WirelessCommon/, mtime 1562152115): 7 files, no impossibilities.
 # C:\Users\dell\AppData\Local\Microsoft\WindowsApps (key C:/Users/dell/AppData/Local/Microsoft/WindowsApps, mtime 1628686604): 24 files, no impossibilities.
 # D:\Program Files\JDK11\bin (key D:/Program Files/JDK11/bin, mtime 1624488881): 127 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1614851713): 32 files, no impossibilities.
 # C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1628434097): 182 files, no impossibilities.
-# . (key c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230, mtime 1628839480): 12 files, no impossibilities.
+# . (key c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230, mtime 1628839 
+480): 12 files, no impossibilities.
 # C:\flutter\bin (key C:/flutter/bin, mtime 1611382297): 8 files, no impossibilities.
 # C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, mtime 1622368225): 7 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1615702035): 5 files, no impossibilities.
@@ -4648,7 +4792,8 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # %QUARTUS_ROOTDIR%\bin: could not be stat'd.
 # C:\ffmpeg-20191126-59d264b-win64-static\bin (key C:/ffmpeg-20191126-59d264b-win64-static/bin, mtime 1574716476): 5 files, no impossibilities.
 # C:\Program Files\Docker\Docker\resources\bin (key C:/Program Files/Docker/Docker/resources/bin, mtime 1626478187): 13 files, no impossibilities.
-# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1619367265): 8 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1619367265): 8 files,  
+no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\Users\dell\.dotnet\tools: could not be stat'd.
 # C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64 (key C:/Program Files (x86)/Common Files/Intel/Shared Files/cpp/bin/Intel64, mtime 1568528099): 14 files, no impossibilities.
@@ -4658,7 +4803,8 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1627659489): 5 files, no impossibilities.
 # C:\Users\dell\Anaconda3\Library\bin (key C:/Users/dell/Anaconda3/Library/bin, mtime 1622218586): 402 files, no impossibilities.
 # C:\emsdk: could not be stat'd.
-# C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler, mtime 1616141856): 17 files, no impossibilities.
+# C:\Program Files (x86)\Common F 
+iles\Intel\Shared Libraries\redist\intel64\compiler (key C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler, mtime 1616141856): 17 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1569901937): 136 files, no impossibilities.
 # C:\Users\dell\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin (key C:/Users/dell/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin, mtime 1627029508): 20 files, no impossibilities.
 # C:\emsdk\python\3.7.4-pywin32_64bit: could not be stat'd.
@@ -4670,13 +4816,15 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # C:\emsdk\java\8.152_64bit\bin: could not be stat'd.
 # C:\Users\dell\Anaconda3\Library\mingw-w64\bin (key C:/Users/dell/Anaconda3/Library/mingw-w64/bin, mtime 1568540554): 15 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1622304338): 11 files, no impossibilities.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1614851713): 32 files, no impossibilities.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1614851713): 32 files, no impossibi 
+lities.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1628763614): 3138 files, no impossibilities.
 # C:\Program Files\WireGuard\ (key C:/Program Files/WireGuard/, mtime 1628313375): 5 files, no impossibilities.
 # C:\Program Files\nodejs (key C:/Program Files/nodejs, mtime 1596738902): 11 files, no impossibilities.
 # D:\Program Files\Mtlb\polyspace\bin (key D:/Program Files/Mtlb/polyspace/bin, mtime 1614648544): 82 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
-# C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1613111116): 12 files, no impossibilities.
+# C:\P 
+rogram Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1613111116): 12 files, no impossibilities.
 # C:\emsdk\upstream\emscripten: could not be stat'd.
 # C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1628763614): 3138 files, no impossibilities.
 # C:\Users\dell\AppData\Roaming\npm (key C:/Users/dell/AppData/Roaming/npm, mtime 1611933718): 6 files, no impossibilities.
@@ -4686,7 +4834,8 @@ USERDOMAIN_ROAMINGPROFILE = IMAM-EL18
 # Implicit Rules
 
 %:: BUILD
-#  recipe to execute (from 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 29):
+#  recipe to execute (from 'c:\Users\dell\Documents\Dev 
+\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile', line 29):
 	 :
 
 %:
@@ -4728,7 +4877,8 @@ all:
 
 c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile: BUILD
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile'
+#  Implicit/static pattern 
+ stem: 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile'
 #  Last modified 2021-08-10 16:09:55
 #  File has not been updated.
 # variable set hash-table stats:
@@ -4760,7 +4910,8 @@ Makefile:
 #  File has not been updated.
 
 clean:
-#  Phony target (prerequisite of .PHONY).
+#  Phony targe 
+t (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
@@ -4791,6 +4942,6 @@ BUILD: all
 # strcache performance: lookups = 9291 / hit rate = 40%
 # hash-table stats:
 # Load=5483/8192=67%, Rehash=0, Collisions=5139/9291=55%
-# Finished Make data base on Fri Aug 13 14:25:09 2021
+# Finished Make data base on Fri Aug 13 17:40:05 2021
 
  

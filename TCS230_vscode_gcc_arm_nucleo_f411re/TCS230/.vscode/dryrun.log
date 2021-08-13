@@ -1,5 +1,6 @@
 mingw32-make.exe -f "c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile" --dry-run --always-make --keep-going --print-directory
 mingw32-make.exe: Entering directory 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230'
+ 
 "Compile: main.cpp"
  
 "link: TCS230.elf"
@@ -12,8 +13,9 @@ mingw32-make.exe[1]: *** [TCS230.elf] Error 1
 mingw32-make.exe[1]: Target 'all' not remade because of errors.
  
 c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile:25: recipe for target 'all' failed
-mingw32-make.exe: Leaving directory 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230'
  
 mingw32-make.exe: *** [all] Error 2
 mingw32-make.exe: Failed to remake makefile 'c:\Users\dell\Documents\Dev\Mbed\TCS230_vscode_gcc_arm_nucleo_f411re\TCS230\Makefile'.
+ 
+mingw32-make.exe: Leaving directory 'c:/Users/dell/Documents/Dev/Mbed/TCS230_vscode_gcc_arm_nucleo_f411re/TCS230'
  

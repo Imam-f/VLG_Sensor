@@ -19,9 +19,9 @@ Author: Lluis Nadal. August 2011.
 #include "mbed.h"
 
 
-InterruptIn in(PA_1);
+InterruptIn in(PA_0);
 DigitalOut s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
-BusOut setColor(PA_1, PA_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
+BusOut setColor(PA_15, PA_1); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
@@ -59,7 +59,7 @@ void time() {
 
         //color++;
         //if (color > 3) color = 0;
-        color = color == 0 ? 1 : 0 ;
+        color = color == 0 ? 2 : 0 ;
         setColor = color;
         
         wait(0.5);
@@ -73,7 +73,7 @@ int main() {
     in.mode(PullDown); // Set the pin to Pull Down mode.
     wait_ms(1000);
     n = 0;
-    color = 1;
+    color = 0;
     setColor = color;
 
     s0 = 0; s1 = 1;         // Frequency 2% = 12 kHz full-scale.
