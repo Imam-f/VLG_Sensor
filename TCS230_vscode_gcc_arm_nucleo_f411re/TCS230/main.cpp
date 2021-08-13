@@ -26,6 +26,7 @@ Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
 float freq = 0;
+float f_red = 0;
 int n;
 int color; // Color
 
@@ -33,6 +34,7 @@ int color; // Color
 void print() {  // Print to PC
     switch (color) {
         case 0:
+            f_red = freq;
             printf(" Red: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 1:
@@ -40,6 +42,7 @@ void print() {  // Print to PC
             break;
         case 2:
             printf(" Clear: \t%.2f Hz, \t%.2f us\r\n", freq, period);
+            printf("rasio = %f\n\r", f_red/freq)
             break;
         case 3:
             printf(" Green: \t%.2f Hz, \t%.2f us\r\n", freq, period);
