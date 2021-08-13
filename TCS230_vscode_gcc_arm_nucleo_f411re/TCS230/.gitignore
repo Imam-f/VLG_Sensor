@@ -1,2 +1,5 @@
 BUILD/*
 BUILD
+
+.vscode/dryrun.log
+.vscode/targets.log

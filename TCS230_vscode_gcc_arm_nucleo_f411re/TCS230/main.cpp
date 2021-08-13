@@ -70,15 +70,13 @@ void time() {
 
 
 int main() {
-
     in.mode(PullDown); // Set the pin to Pull Down mode.
-    wait(1);
+    wait_ms(1000);
     n = 0;
-    color = 0;
+    color = 1;
     setColor = color;
 
-    s0 = 0;
-    s1 = 1;         // Frequency 2% = 12 kHz full-scale.
+    s0 = 0; s1 = 1;         // Frequency 2% = 12 kHz full-scale.
 
     in.rise(&time);  // Set up the interrupt for rising edge
     t.start();       // Start the timer
