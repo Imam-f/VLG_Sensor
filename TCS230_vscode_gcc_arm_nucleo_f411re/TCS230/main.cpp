@@ -42,7 +42,7 @@ void print() {  // Print to PC
             break;
         case 2:
             printf(" Clear: \t%.2f Hz, \t%.2f us\r\n", freq, period);
-            printf("rasio = %f\n\r", f_red/freq)
+            printf("rasio = %f\n\r", f_red/freq);
             break;
         case 3:
             printf(" Green: \t%.2f Hz, \t%.2f us\r\n", freq, period);
