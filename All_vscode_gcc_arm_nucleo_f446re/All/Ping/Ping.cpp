@@ -47,7 +47,7 @@ void Ping::Set_Speed_of_Sound(int SoS_ms )
 int Ping::Read_cm()
 // -1 means not valid.
 {
-    if(_Valid && ~_Busy) 
+    if(_Valid && !_Busy) 
         return ((_Time*_SPEED_OF_SOUND_CM)/1000);
     else 
         return -1;
