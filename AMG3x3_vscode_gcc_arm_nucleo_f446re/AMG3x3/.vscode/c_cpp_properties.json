@@ -227,7 +227,8 @@
             ],
             "intelliSenseMode": "linux-gcc-x64",
             "cStandard": "c17",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4
