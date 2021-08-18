@@ -176,7 +176,7 @@ int main() {
         digital[1] = Line2.read();
         digital[2] = Button.read();
 
-        printf("Line and button: \n\r");
+        printf("Line : \n\r");
         printf("%d__%d__%d\n\r",
                   digital[0], digital[1], digital[2]);
         printf("_______________________________________________\n\r");
@@ -232,7 +232,7 @@ int main() {
         uviolet[4] = UV5.read();
         
         printf("UV : \n\r");
-        printf("%f__%f__%f__%f__%f\n\r",
+        printf("%f__%f__%f\n\r__%f__%f\n\r",
                   uviolet[0], uviolet[1], uviolet[2],
                   uviolet[3], uviolet[4]);
         printf("_______________________________________________\n\r");
