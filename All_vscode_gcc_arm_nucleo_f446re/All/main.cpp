@@ -59,20 +59,19 @@ TextLCD_I2C lcd(&i2c_lcd, 0x27<<1, TextLCD::LCD16x2);  // I2C bus, PCF8574 Slave
 
 ////// Ping ////////////////////////////
 
-Ping Pinger1(PC_8);
+Ping Pinger1(PC_8 );
 Ping Pinger2(PA_15);
 Ping Pinger3(PA_14);
-Ping Pinger4(PD_2);
+Ping Pinger4(PD_2 );
 
-Ping Pinger5(PC_8);
+Ping Pinger5(PC_8 );
 Ping Pinger6(PA_15);
 Ping Pinger7(PA_14);
-Ping Pinger8(PD_2);
+Ping Pinger8(PD_2 );
 
 
 int ping1; int ping2;
 int ping3; int ping4;
-
 int ping5; int ping6;
 int ping7; int ping8;
 
@@ -90,9 +89,9 @@ float uviolet[5];
 
 ////// Color ///////////////////////////////// OK
 
-InterruptIn in(PA_0);
-DigitalOut s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
-BusOut setColor(PA_15, PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
+InterruptIn  in(PA_0 );
+DigitalOut   s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
+BusOut setColor(PA_15,     PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
@@ -107,10 +106,9 @@ void time();
 
 ///// Gripper /////////////////////////////// OK
 
-Serial pc(SERIAL_TX, SERIAL_RX);
 DigitalOut myled(LED1);
-Servo servoGrab(PA_1);
-Servo servoTurn(PA_0);
+Servo  servoGrab(PA_1);
+Servo  servoTurn(PA_0);
 
 void grabBoneka();
 void releaseBoneka();

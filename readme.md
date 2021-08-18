@@ -16,7 +16,9 @@ from makefile
 Available sensor
 - AMG              --V
 - CMPS             --X
-- LCD              --X
-- Gripper Servo    --X
-- Ping             --X
+- LCD              --V
+- Gripper Servo    --V
+- Ping             --V
 - TCS230           --V
+
+- All at once      --V
