@@ -100,7 +100,7 @@ float period = 0; // This is the period between interrupts in microseconds
 float freq = 0;
 float f_red = 0;
 int n;
-int color; // Color
+int color;
 
 void print();
 void time();
@@ -168,7 +168,6 @@ int main() {
     wait_ms(1000);
 
 
-
     while (1) {
 
         // Digital
@@ -233,7 +232,7 @@ int main() {
         uviolet[4] = UV5.read();
         
         printf("UV : \n\r");
-        printf("%f__%f__%f__%f__%f\n\r",
+        printf("%f__%f__%f\n\r__%f__%f\n\r",
                   uviolet[0], uviolet[1], uviolet[2],
                   uviolet[3], uviolet[4]);
         printf("_______________________________________________\n\r");
