@@ -176,7 +176,7 @@ int main() {
         digital[1] = Line2.read();
         digital[2] = Button.read();
 
-        printf("Line : \n\r");
+        printf("Line and button: \n\r");
         printf("%d__%d__%d\n\r",
                   digital[0], digital[1], digital[2]);
         printf("_______________________________________________\n\r");
