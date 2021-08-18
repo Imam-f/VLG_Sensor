@@ -48,6 +48,7 @@ PROJECT := All
 
 OBJECTS += AMG8833lib/AMG8833.o
 OBJECTS += TextLCD/TextLCD.o
+OBJECTS += Servo/Servo.o
 OBJECTS += Ping/Ping.o
 OBJECTS += main.o
 
@@ -180,6 +181,7 @@ INCLUDE_PATHS += -I../.
 INCLUDE_PATHS += -I..//usr/src/mbed-sdk
 INCLUDE_PATHS += -I../AMG8833lib
 INCLUDE_PATHS += -I../TextLCD
+INCLUDE_PATHS += -I../Servo
 INCLUDE_PATHS += -I../Ping
 INCLUDE_PATHS += -I../mbed
 INCLUDE_PATHS += -I../mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM
@@ -394,6 +396,7 @@ ASM_FLAGS += -DUSE_FULL_LL_DRIVER
 ASM_FLAGS += -I/usr/src/mbed-sdk
 ASM_FLAGS += -I../AMG8833lib
 ASM_FLAGS += -I../TextLCD
+ASM_FLAGS += -I../Servo
 ASM_FLAGS += -I../Ping
 ASM_FLAGS += -I../mbed
 ASM_FLAGS += -I../mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM

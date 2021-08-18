@@ -1,5 +1,7 @@
 #include "mbed.h"
 #include "AMG8833.h"
+#include "TextLCD.h"
+#include "Servo.h"
 #include "Ping.h"
 
 /*
@@ -171,9 +173,9 @@ int main() {
 
         // Digital
 
-        digital[0] = line1.read();
-        digital[1] = line2.read();
-        digital[2] = button.read();
+        digital[0] = Line1.read();
+        digital[1] = Line2.read();
+        digital[2] = Button.read();
 
         printf("Line : \n\r");
         printf("%d__%d__%d\n\r",
@@ -284,12 +286,12 @@ int main() {
 
         // Relay
         
-        relay = 0;
-        printf("Relay %d is now off %d\r\n", relay.is_connected(), relay.read());
+        Relay = 0;
+        printf("Relay %d is now off %d\r\n", Relay.is_connected(), Relay.read());
         wait_ms(1000);
         
-        relay = 1;
-        printf("Relay %d is now on %d\r\n", relay.is_connected(), relay.read());
+        Relay = 1;
+        printf("Relay %d is now on %d\r\n", Relay.is_connected(), Relay.read());
         wait_ms(500);
 
     }
