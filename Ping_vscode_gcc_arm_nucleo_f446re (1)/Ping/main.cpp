@@ -16,10 +16,6 @@ Ping Pingerbl(PA_11);
 Ping Pingerb(PB_1);
 
 
-AnalogIn UV1(PC_0);
-AnalogIn UV2(PC_1);
-AnalogIn UV3(PB_0);
-
 // Variable storage
 
 int pingfm;
@@ -33,12 +29,8 @@ int pingbl;
 int pingb;
 
 
-float uviolet[3];
-
 // MAIN
-int main()
-{
-
+int main() {
     while(1) {
         // Kirim sinyal
 
@@ -79,27 +71,13 @@ int main()
         pingb  = Pingerb.Read_cm();
         
         wait_ms(200);
-
-        ////////////////////////////////
-
-        uviolet[0] = UV1.read();
-        uviolet[1] = UV2.read();
-        uviolet[2] = UV3.read();
-        
         
         // Cetak data
 
         printf("ping : \n\r");
-//        printf("Ping %d",pingfm);
         printf("%d__%d__%d__%d\n\r%d__%d__%d__%d\n\r",
-                  pingfm, pingval, pingfr,
-                  pingl, pingr, pingbr, pingbl, pingb);
+                  pingfm, pingval, pingfr, pingl, 
+                  pingr, pingbr, pingbl, pingb);
         printf("_______________________________________________\n\r");
-        
-        printf("UV : \n\r");
-        printf("%f__%f__%f\n\r",
-                  uviolet[0], uviolet[1], uviolet[2]);
-        printf("_______________________________________________\n\r");
-        
     }
 }
