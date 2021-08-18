@@ -100,7 +100,7 @@ float period = 0; // This is the period between interrupts in microseconds
 float freq = 0;
 float f_red = 0;
 int n;
-int color; // Color
+int color;
 
 void print();
 void time();
@@ -166,7 +166,6 @@ int main() {
     servoGrab = 0;
     servoTurn = 0.5;
     wait_ms(1000);
-
 
 
     while (1) {
