@@ -84,6 +84,8 @@
                 "/usr/src/mbed-sdk/*",
                 "AMG8833lib/*",
                 "Ping/*",
+                "Servo/*",
+                "TextLCD/*",
                 "mbed/*",
                 "mbed/TARGET_NUCLEO_F446RE/TOOLCHAIN_GCC_ARM/*",
                 "mbed/drivers/*",

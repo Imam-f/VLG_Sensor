@@ -125,6 +125,8 @@ void downBoneka();
 
 int main() {
 
+    Button.mode(PullUp);
+
     // LCD
 
     printf("LCD Test. Columns=%d, Rows=%d\n\r", lcd.columns(), lcd.rows());
