@@ -39,37 +39,37 @@
 
 ////// Digital ////////////////////////
 
-DigitalIn   Line1(PB_5);    // 
-DigitalIn   Line2(PB_5);    // 
-DigitalIn  Button(PB_5);    // 
-DigitalOut  Relay(PB_5);    // OK
+DigitalIn   Line1(PH_0);    // 
+DigitalIn   Line2(PH_1);    // 
+DigitalIn  Button(PB_6);    // 
+DigitalOut  Relay(PA_5);    // OK
 
-int digital[4];
+int digital[6];
 
 
 //// AMG /////////////////////////////// OK
 
-Adafruit_AMG88xx amg(PB_3, PB_10);
+Adafruit_AMG88xx amg(PB_3, PB_10); // SDA, SCL
 float pixels[AMG88xx_PIXEL_ARRAY_SIZE];
 
 
 ///// LCD ////////////////////////////// OK
 
-I2C i2c_lcd(PB_9,PB_8); // SDA, SCL
+I2C i2c_lcd(PB_4, PA_8); // SDA, SCL
 TextLCD_I2C lcd(&i2c_lcd, 0x27<<1, TextLCD::LCD16x2);  // I2C bus, PCF8574 Slaveaddress, LCD Type
 
 
 ////// Ping ////////////////////////////
 
-Ping Pinger1(PC_8 );
-Ping Pinger2(PA_15);
-Ping Pinger3(PA_14);
-Ping Pinger4(PD_2 );
+Ping Pinger1(PC_4 );
+Ping Pinger2(PB_2 );
+Ping Pinger3(PA_11);
+Ping Pinger4(PB_1 );
 
-Ping Pinger5(PC_8 );
-Ping Pinger6(PA_15);
-Ping Pinger7(PA_14);
-Ping Pinger8(PD_2 );
+Ping Pinger5(PD_2 );
+Ping Pinger6(PA_14);
+Ping Pinger7(PA_15);
+Ping Pinger8(PC_8 );
 
 
 int ping1; int ping2;
@@ -81,19 +81,20 @@ int ping7; int ping8;
 ////// IR ////////////////////////////////////
 
 AnalogIn UV1(PC_0);
-AnalogIn UV2(PC_0);
-AnalogIn UV3(PC_0);
-AnalogIn UV4(PC_0);
-AnalogIn UV5(PC_0);
+AnalogIn UV2(PC_1);
+AnalogIn UV3(PB_0);
+AnalogIn UV4(PA_4);
+AnalogIn UV5(PC_2);
 
 float uviolet[5];
 
 
 ////// Color ///////////////////////////////// OK
 
-InterruptIn  in(PA_0 );
-DigitalOut   s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
-BusOut setColor(PA_15,     PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
+InterruptIn  in(PA_3 );
+// DigitalOut   s0(PA_7 ), s1(PC_7); // s2(p7), s3(p8)
+int s0, s1;
+BusOut setColor(PA_7); // (PA_15, PC_15); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
@@ -108,9 +109,8 @@ void time();
 
 ///// Gripper /////////////////////////////// OK
 
-DigitalOut myled(LED1);
-Servo  servoGrab(PA_1);
-Servo  servoTurn(PA_0);
+Servo  servoGrab(PA_9);
+Servo  servoTurn(PA_10);
 
 void grabBoneka();
 void releaseBoneka();
@@ -368,7 +368,7 @@ void time() {
 
         //color++;
         //if (color > 3) color = 0;
-        color = color == 0 ? 2 : 0 ;
+        color = !color; // == 0 ? 1 : 0 ;
         setColor = color;
         
         wait(0.5);
