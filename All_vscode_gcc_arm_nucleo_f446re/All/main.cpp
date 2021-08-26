@@ -41,8 +41,9 @@
 
 DigitalIn   Line1(PH_0);    // 
 DigitalIn   Line2(PH_1);    // 
-DigitalIn  Button(PB_6);    // 
-DigitalOut  Relay(PA_5);    // OK
+
+DigitalIn  Button(PA_3);    // 
+DigitalOut  Relay(PA_1);    // OK
 
 int digital[6];
 
@@ -71,11 +72,14 @@ Ping Pinger6(PA_14);
 Ping Pinger7(PA_15);
 Ping Pinger8(PC_8 );
 
+Ping Pinger9(PC_9 );
+
 
 int ping1; int ping2;
 int ping3; int ping4;
 int ping5; int ping6;
 int ping7; int ping8;
+int ping9;
 
 
 ////// IR ////////////////////////////////////
@@ -109,6 +113,7 @@ void time();
 
 ///// Gripper /////////////////////////////// OK
 
+// grab and turn probably switched
 Servo  servoGrab(PA_9);
 Servo  servoTurn(PA_10);
 
@@ -218,10 +223,14 @@ int main() {
         wait_ms(30);
         ping8 = Pinger8.Read_cm();
 
+        Pinger9.Send();
+        wait_ms(30);
+        ping9 = Pinger9.Read_cm();
+
         printf("ping : \n\r");
-        printf("%d__%d__%d__%d\n\r%d__%d__%d__%d\n\r",
+        printf("%d__%d__%d__%d\n\r%d__%d__%d__%d__%d\n\r",
                   ping1, ping2, ping3, ping4,
-                  ping5, ping6, ping7, ping8);
+                  ping5, ping6, ping7, ping8, ping9);
         printf("_______________________________________________\n\r");
 
 
