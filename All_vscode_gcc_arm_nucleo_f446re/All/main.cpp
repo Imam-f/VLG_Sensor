@@ -39,7 +39,7 @@
 
 ////// Digital ////////////////////////
 
-DigitalIn   Line1(PH_0);    // 
+DigitalIn   Line1(PC_5);    // 
 DigitalIn   Line2(PH_1);    // 
 
 DigitalIn  Button(PA_3);    // 
