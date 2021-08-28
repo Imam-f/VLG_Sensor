@@ -84,7 +84,7 @@
 
 ///// LCD ////////////////////////////// OK
 
-I2C i2c_lcd(PB_4, PA_8); // SDA, SCL
+I2C i2c_lcd(PB_3, PB_10); // SDA, SCL
 TextLCD_I2C lcd(&i2c_lcd, 0x27<<1, TextLCD::LCD16x2);  // I2C bus, PCF8574 Slaveaddress, LCD Type
 
 
@@ -96,15 +96,14 @@ int main() {
 
     printf("LCD Test. Columns=%d, Rows=%d\n\r", lcd.columns(), lcd.rows());
 
-
     while (1) {
 
       lcd.setCursor(TextLCD::CurOff_BlkOn);
-  
+
       lcd.setMode(TextLCD::DispOn);
       lcd.setBacklight(TextLCD::LightOn);
       lcd.cls();
-      lcd.printf("Sukses");  
+      lcd.printf("Sukses");
       
       wait_ms(2000);
 

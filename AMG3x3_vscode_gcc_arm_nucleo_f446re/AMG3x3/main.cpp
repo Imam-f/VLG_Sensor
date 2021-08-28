@@ -24,13 +24,13 @@ int main() {
         printf("Reading . . . \n\r");
         for (int i = 0; i < 8; i++){
             for (int j = 0; j < 8; j++) {
-                // if(pixels[(i*8) + j] > 40){
-                //     printf("*  ");
-                // }
-                // else {
-                //     printf("|  ");
-                // }
-                printf("%7.2f    ",pixels[i*8 + j]);
+                if(pixels[(i*8) + j] > 40){
+                    printf("*  ");
+                }
+                else {
+                    printf("|  ");
+                }
+                // printf("%7.2f    ",pixels[i*8 + j]);
             }
             printf("\n\r");
         }

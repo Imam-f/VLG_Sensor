@@ -1,7 +1,7 @@
 #include "mbed.h"
 
 DigitalOut relay(PA_1);
-DigitalIn  Line1(PH_0);
+DigitalIn  Line1(PC_5);
 DigitalIn  Line2(PH_1);
 
 int digital[2];
