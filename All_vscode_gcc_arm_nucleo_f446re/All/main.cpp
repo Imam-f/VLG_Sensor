@@ -42,7 +42,7 @@
 DigitalIn   Line1(PC_5);    // 
 DigitalIn   Line2(PH_1);    // 
 
-DigitalIn  Button(PA_3);    // 
+DigitalIn  Button(PB_6);    // 
 DigitalOut  Relay(PA_1);    // OK
 
 int digital[6];
@@ -64,7 +64,7 @@ TextLCD_I2C lcd(&i2c_lcd, 0x27<<1, TextLCD::LCD16x2);  // I2C bus, PCF8574 Slave
 ////// Ping ////////////////////////////
 
 Ping Pinger1(PC_4 );
-Ping Pinger2(PB_2 );
+Ping Pinger2(PB_5 );
 Ping Pinger3(PA_11);
 Ping Pinger4(PB_1 );
 
