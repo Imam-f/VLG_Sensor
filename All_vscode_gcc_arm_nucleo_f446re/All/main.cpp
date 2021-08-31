@@ -39,7 +39,7 @@
 
 ////// Digital ////////////////////////
 
-DigitalIn   Line1(PC_5);    // 
+DigitalIn   Line1(PC_2);    // 
 DigitalIn   Line2(PH_1);    // 
 
 DigitalIn  Button(PB_6);    // 
@@ -64,7 +64,7 @@ TextLCD_I2C lcd(&i2c_lcd, 0x27<<1, TextLCD::LCD16x2);  // I2C bus, PCF8574 Slave
 ////// Ping ////////////////////////////
 
 Ping Pinger1(PC_4 );
-Ping Pinger2(PB_5 );
+Ping Pinger2(PB_2 ); //
 Ping Pinger3(PA_11);
 Ping Pinger4(PB_1 );
 
@@ -89,7 +89,7 @@ AnalogIn UV1(PC_0);
 AnalogIn UV2(PC_1);
 AnalogIn UV3(PB_0);
 AnalogIn UV4(PA_4);
-AnalogIn UV5(PC_2);
+// AnalogIn UV5(PC_2);
 
 float uviolet[5];
 
@@ -241,12 +241,13 @@ int main() {
         uviolet[1] = UV2.read();
         uviolet[2] = UV3.read();
         uviolet[3] = UV4.read();
-        uviolet[4] = UV5.read();
+        // uviolet[4] = UV5.read();
         
         printf("UV : \n\r");
-        printf("%f__%f__%f\n\r__%f__%f\n\r",
+        printf("%f__%f__%f\n\r__%f\n\r",
                   uviolet[0], uviolet[1], uviolet[2],
-                  uviolet[3], uviolet[4]);
+                  uviolet[3]);
+                  //uviolet[3], uviolet[4]);
         printf("_______________________________________________\n\r");
 
 
