@@ -8,8 +8,8 @@
 
 Serial pc(SERIAL_TX, SERIAL_RX);
 DigitalOut myled(LED1);
-Servo servoGrab(PA_1);
-Servo servoTurn(PA_0);
+Servo servoGrab(PB_3);
+Servo servoTurn(PA_10);
 
 void grabBoneka() {
     for(int i=0; i<25; i++) {
@@ -58,7 +58,7 @@ int main() {
     // Posisi Awal Servo
     servoGrab = 0;
     servoTurn = 0.5;
-    wait(1);
+    wait_ms(1000);
     
     while(1) {
             // Basic Moveset: Grab Boneka, angkat, turunin, lepas boneka
