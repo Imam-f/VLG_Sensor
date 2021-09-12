@@ -115,7 +115,7 @@ void time();
 ///// Gripper /////////////////////////////// OK
 
 // grab and turn probably switched
-Servo  servoGrab(PA_9);
+Servo  servoGrab(PA_12);
 Servo  servoTurn(PA_10);
 
 void grabBoneka();
