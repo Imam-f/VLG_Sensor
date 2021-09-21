@@ -19,9 +19,8 @@ Author: Lluis Nadal. August 2011.
 #include "mbed.h"
 
 
-InterruptIn in(PA_0);
-DigitalOut s0(PA_13), s1(PA_14); // s2(p7), s3(p8)
-BusOut setColor(PA_15, PA_1); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
+InterruptIn in(PB_4);
+BusOut setColor(PB_10); //(LSB pin,..., MSB pin): (s3, s2). Red: 0, Blue: 1, Clear: 2, Green: 3.
 Timer t;
 
 float period = 0; // This is the period between interrupts in microseconds
@@ -38,11 +37,11 @@ void print() {  // Print to PC
             printf(" Red: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 1:
-            printf(" Blue: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
-            break;
-        case 2:
             printf(" Clear: \t%.2f Hz, \t%.2f us\r\n", freq, period);
             printf("rasio = %f\n\r", f_red/freq);
+            break;
+        case 2:
+            printf(" Blue: \t\t%.2f Hz, \t%.2f us\r\n", freq, period);
             break;
         case 3:
             printf(" Green: \t%.2f Hz, \t%.2f us\r\n", freq, period);
@@ -62,7 +61,7 @@ void time() {
 
         //color++;
         //if (color > 3) color = 0;
-        color = color == 0 ? 2 : 0 ;
+        color = color == 0 ? 1 : 0 ;
         setColor = color;
         
         wait(0.5);
@@ -78,8 +77,6 @@ int main() {
     n = 0;
     color = 0;
     setColor = color;
-
-    s0 = 0; s1 = 1;         // Frequency 2% = 12 kHz full-scale.
 
     in.rise(&time);  // Set up the interrupt for rising edge
     t.start();       // Start the timer
